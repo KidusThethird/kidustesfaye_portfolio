@@ -27,7 +27,7 @@ export default function AboutMe() {
             <h1 className="text-sm">
               I am a professional{" "}
               <span className="text-primaryColor">software developer</span> with
-              over three years of industry experience. I possess comprehensive
+              over four years of industry experience. I possess comprehensive
               knowledge of the current technology stack used in modern web
               development.
             </h1>
