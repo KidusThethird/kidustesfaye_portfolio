@@ -38,7 +38,7 @@ export default function SkillSet() {
       </h1>
       <h1 className="text-center font-bold text-primaryColor border-t-4 border-primaryColor w-48 mx-auto mt-4"></h1>
 
-      <div className="grid grid-cols-2 px-10 gap-4">
+      <div className="xmd:grid grid-cols-2 px-10 gap-4">
         <div className="border-2 rounded-2xl shadow-2xl my-4">
           <h1 className="text-xl pt-4 px-4">Frontend</h1>
           <div className="flex  flex-wrap space-x-4 p-4 space-y-3">

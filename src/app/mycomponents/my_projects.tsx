@@ -62,7 +62,7 @@ export default function MyProjects() {
       </h1>
       <h1 className="text-center font-bold text-primaryColor border-t-4 border-primaryColor w-48 mx-auto mt-4"></h1>
 
-      <div className="grid grid-cols-3 px-7 py-14 gap-10">
+      <div className="ssmd:grid ssmd:grid-cols-2 xmd:grid-cols-3 px-7 py-14 gap-10">
         {ProjectsDetail.map((project, index) => (
           <div
             key={project.id}

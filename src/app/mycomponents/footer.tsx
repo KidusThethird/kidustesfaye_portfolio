@@ -7,7 +7,7 @@ const marcellus = Marcellus({ subsets: ["latin"], weight: "400" });
 export default function Footer() {
   return (
     <div className={`bg-gray-200 text-gray-800 ${marcellus.className}`}>
-      <div className="w-full grid grid-cols-5  px-7 py-12 space-x-4">
+      <div className="w-full ssmd:grid smd:grid-cols-3 xmd:grid-cols-5  px-7 py-12 space-x-4">
         <div className="col-span-2">
           <h1 className="py-3">Kidus Tesfaye</h1>
           <h1 className="text-sm">

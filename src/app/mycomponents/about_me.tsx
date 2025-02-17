@@ -15,7 +15,7 @@ export default function AboutMe() {
         <h1 className="text-center font-bold text-primaryColor border-t-4 border-primaryColor w-48 mx-auto mt-4"></h1>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 mt-10 px-10">
+      <div className="xmd:grid grid-cols-2 gap-4 mt-10 px-10">
         <div className="shadow-2xl p-5 rounded-lg  ">
           <div className="flex ">
             <LaptopMinimal size={50} className=" my-auto text-primaryColor" />
