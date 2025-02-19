@@ -185,7 +185,7 @@ export default function SkillSet() {
                 size={36}
                 title="React.js"
               />
-              <h1 className="my-auto">Prism ORM</h1>
+              <h1 className="my-auto">Prisma ORM</h1>
             </div>
           </div>
         </div>
