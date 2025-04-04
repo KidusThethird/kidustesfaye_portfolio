@@ -1,10 +1,11 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function NavBar() {
   const [dropDown, setDropDown] = React.useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   const handleDropDown = () => {
     setDropDown(!dropDown);
@@ -15,6 +16,31 @@ export default function NavBar() {
   };
 
   const menuItems = ["Home", "About", "Skills", "Projects", "Testimonials"];
+
+  // Observer callback to track active section
+  const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setActiveSection(entry.target.id);
+      }
+    });
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersection, {
+      rootMargin: "0px",
+      threshold: 0.5, // Trigger when 50% of the section is visible
+    });
+
+    // Observe each section
+    menuItems.forEach((item) => {
+      const element = document.getElementById(item);
+      if (element) observer.observe(element);
+    });
+
+    // Clean up observer
+    return () => observer.disconnect();
+  }, [menuItems]);
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
@@ -35,7 +61,11 @@ export default function NavBar() {
               <a
                 key={item}
                 href={`#${item}`}
-                className="hover:text-primaryColor font-semibold transition-all duration-300 ease-in-out"
+                className={`${
+                  activeSection === item
+                    ? "border-b-4 border-primaryColor text-primaryColor font-bold" // Highlight active item
+                    : "hover:text-primaryColor"
+                } font-semibold transition-all duration-300 ease-in-out p-2 rounded`}
               >
                 {item}
               </a>
@@ -82,7 +112,15 @@ export default function NavBar() {
           >
             {menuItems.map((item) => (
               <div key={item}>
-                <a href={`#${item}`} onClick={handleNavClick}>
+                <a
+                  href={`#${item}`}
+                  className={`${
+                    activeSection === item
+                      ? "bg-primaryColor text-white font-bold" // Highlight active item
+                      : "hover:text-primaryColor"
+                  }`}
+                  onClick={handleNavClick}
+                >
                   {item}
                 </a>
               </div>
