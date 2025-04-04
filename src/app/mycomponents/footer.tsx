@@ -67,7 +67,7 @@ export default function Footer() {
               <Mail size={20} /> <h1>kidus.z3rd@gmail.com</h1>
             </div>
             <div className="flex space-x-4">
-              <Send size={20} /> <h1>@kz3rd</h1>
+              <Send size={20} /> <h1>@kidustesfaye3</h1>
             </div>
             <div className="flex space-x-4">
               <Phone size={20} /> <h1>+2519 8704 1885</h1>
