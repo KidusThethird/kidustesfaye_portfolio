@@ -16,19 +16,19 @@ export default function Footer() {
           </h1>
           <div className="flex space-x-4">
             <a
-              href=""
+              href="https://www.linkedin.com/in/kidus-tesfaye-b86766b4/"
               className="hover:text-primaryColor  hover:border-primaryColor p-2 border-gray-800 rounded-xl"
             >
               <Linkedin size={25} />
             </a>
             <a
-              href=""
+              href="https://github.com/KidusThethird"
               className="hover:text-primaryColor hover:border-primaryColor p-2 border-gray-800 rounded-xl"
             >
               <Github size={25} />
             </a>
             <a
-              href=""
+              href="https://t.me/kidustesfaye3"
               className="hover:text-primaryColor hover:border-primaryColor  p-2 border-gray-800 rounded-xl"
             >
               <Send size={25} />
