@@ -25,6 +25,7 @@ import {
   SiGit,
   SiGithub,
   SiDocker,
+  SiTelegram,
 } from "react-icons/si"; // Other frameworks
 
 const marcellus = Marcellus({ subsets: ["latin"], weight: "400" });
@@ -210,6 +211,7 @@ export default function SkillSet() {
               />
               <h1 className="my-auto">GitHub</h1>
             </div>
+
             <div className="flex space-x-4">
               <SiDocker
                 className="text-primaryColor "
@@ -221,6 +223,15 @@ export default function SkillSet() {
             <div className="flex space-x-4">
               <h1 className="text-3xl text-primaryColor font-bold">VPS</h1>
               <h1 className="my-auto"></h1>
+            </div>
+
+            <div className="flex space-x-4">
+              <SiTelegram
+                className="text-primaryColor "
+                size={36}
+                title="React.js"
+              />
+              <h1 className="my-auto">Telegram Bot</h1>
             </div>
           </div>
         </div>

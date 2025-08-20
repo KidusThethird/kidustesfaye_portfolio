@@ -21,6 +21,14 @@ export default function MyProjects() {
       image: "/common_files/images/fayida.png",
     },
     {
+      id: 2,
+      title: "Fayida Academy Telegram Bot",
+      description:
+        "This telegram bot is designed to assist students with their courses by providing clear and easy-to-understand materials.",
+      url: "https://t.me/fayidaacademy_bot",
+      image: "/common_files/images/fayidabot.jpg",
+    },
+    {
       id: 3,
       title: "Sifen Genral Trading",
       description:
