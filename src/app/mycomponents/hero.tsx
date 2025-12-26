@@ -67,7 +67,7 @@ export default function HeroSection() {
         <div className="flex justify-center items-center p-10 relative">
           <motion.img
             className="w-52 xmd:w-96 rounded-full border-4 border-gray-800"
-            src="/common_files/images/mypicture.jpg"
+            src="/common_files/images/mypicture2.png"
             alt="kidus"
             animate={{
               scale: [1, 1.05, 1], // Pulsing in size

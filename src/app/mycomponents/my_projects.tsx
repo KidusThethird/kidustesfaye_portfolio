@@ -21,7 +21,7 @@ export default function MyProjects() {
       image: "/common_files/images/fayida.png",
     },
     {
-      id: 2,
+      id: 3,
       title: "Fayida Academy Telegram Bot",
       description:
         "This telegram bot is designed to assist students with their courses by providing clear and easy-to-understand materials.",
@@ -29,7 +29,7 @@ export default function MyProjects() {
       image: "/common_files/images/fayidabot.jpg",
     },
     {
-      id: 3,
+      id: 4,
       title: "Sifen Genral Trading",
       description:
         "Sifen General Trading specializes in coffee export, electronics import, and maintenance services, delivering high-quality products across these sectors.",
@@ -37,7 +37,7 @@ export default function MyProjects() {
       image: "/common_files/images/siphen.png",
     },
     {
-      id: 4,
+      id: 5,
       title: "Birara Genral Trading",
       description:
         "Birara Dragon Bridge General Trading provides medical supplies, automobiles, heavy machinery, fashion products, furnishings, and consulting services, ensuring quality across multiple industries.",
@@ -45,7 +45,7 @@ export default function MyProjects() {
       image: "/common_files/images/birara.png",
     },
     {
-      id: 5,
+      id: 6,
       title: "Martial Security Services",
       description:
         "Martial Security Service PLC, based in Addis Ababa, provides professional security services built on integrity, customer focus, and excellence, with highly trained staff tailored to client needs.",
@@ -53,7 +53,7 @@ export default function MyProjects() {
       image: "/common_files/images/martial.png",
     },
     {
-      id: 6,
+      id: 7,
       title: "Lemamar Cosmetics",
       description:
         "Lemamar Cosmetics is your go-to destination for premium beauty and skincare products that enhance your natural beauty and self-expression.",
