@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/mycomponents/landing_page_components/navbar";
-import Footer from "@/components/mycomponents/landing_page_components/footer";
-import { Toaster } from "@/components/ui/sonner";
+import "../globals.css";
+import NavBar from "@/components/mycomponents/landing_page_components/navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ethiopian Profiles",
-  description: "Ethioppian Profiles",
+  title: "Kidus Tesfaye | FullStack Developer",
+  description: "Actively Working",
 };
 
 export default function RootLayout({
@@ -27,18 +24,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {
-          <div>
-            {/* <Navbar /> */}
-            {children}
-            <Toaster />
-            {/* <Footer /> */}
-          </div>
-        }
+        <div className="pt-24 lg:pt-14">
+          <NavBar />
+          {children}
+        </div>
       </body>
     </html>
   );
