@@ -28,19 +28,21 @@ model customers {
 }
 
 model project {
-  id          String    @id @default(cuid())
-  name        String
-  description String?
-  proposal    String?
-  startDate   DateTime?
-  endDate     DateTime?
-  customer    customers @relation(fields: [customerId], references: [id])
-  customerId  String
-  tasks       task[]
-  status      String?   @default("waiting to start")
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-  deletedAt   DateTime?
+  id                 String               @id @default(cuid())
+  name               String
+  description        String?
+  proposal           String?
+  startDate          DateTime?
+  endDate            DateTime?
+  paymentAmount      String?
+  customer           customers            @relation(fields: [customerId], references: [id])
+  customerId         String
+  tasks              task[]
+  paymentsmanagement paymentsmanagement[]
+  status             String?              @default("waiting to start")
+  createdAt          DateTime             @default(now())
+  updatedAt          DateTime             @updatedAt
+  deletedAt          DateTime?
 }
 
 model task {
@@ -56,4 +58,24 @@ model task {
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
   deletedAt   DateTime?
+}
+
+model paymentsmanagement {
+  id        String    @id @default(cuid())
+  name      String?
+  amount    String?
+  status    String?   @default("not paid")
+  project   project?  @relation(fields: [projectId], references: [id])
+  projectId String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+}
+
+model admin {
+  id          String  @id @default(cuid())
+  name        String
+  email       String  @unique
+  phoneNumber String?
+  password    String
 }
